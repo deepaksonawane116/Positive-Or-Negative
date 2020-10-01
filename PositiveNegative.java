@@ -1,19 +1,22 @@
-public class PositiveNegative {
+package sixthquestion;
+import java.util.Scanner;
+public class TypeOfNumber {
 
-    public static void main(String[] args) {
+	public static void main(String[] args) {
+	Scanner sc =new Scanner(System.in);
+	System.out.println(" Enter Your Number");
+		float a= sc.nextFloat();
+		
+		if (a<0)
+		{
+			System.out.println("Your Number Is Negative");
+		}else if (a==0)
+		{
+			System.out.println("Your Number Is Zero");
+		}else
+			
+			System.out.println("Your Number Is Positive");
 
-        double number = - 12.3;
+	}
 
-        // true if number is less than 0
-        if (number < 0.0)
-            System.out.println(number + " is a negative number.");
-
-        // true if number is greater than 0
-        else if ( number > 0.0)
-            System.out.println(number + " is a positive number.");
-
-        // if both test expression is evaluated to false
-        else
-            System.out.println(number + " is 0.");
-    }
 }
